@@ -27,7 +27,7 @@ export default function Nav() {
         <div className="wrap">
           <nav className="navbar">
             <a href="#top" className="brand">
-              <i>Σ</i>CertSigma
+              <img src="/CertSigmaFull_Logo.svg" alt="CertSigma" />
             </a>
             <div className="navlinks">
               {LINKS.map((l) => (

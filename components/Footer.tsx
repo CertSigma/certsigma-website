@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="fgrid">
           <div className="fbrand">
             <a href="#top" className="brand">
-              <i>Σ</i>CertSigma
+              <img src="/CertSigmaFull_Logo.svg" alt="CertSigma" />
             </a>
             <p>The audit and certification arm of an India-native compliance ecosystem. Implementation by Relynt.</p>
           </div>
