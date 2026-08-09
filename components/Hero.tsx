@@ -36,20 +36,18 @@ export default function Hero() {
             <b>New</b> ISO 42001 for AI management systems
           </motion.span>
           <RevealHeadline>
-            Security certification, <span className="gtext">without the theatre.</span>
+            Compliance Shouldn’t Slow You Down
+            {/* <span className="gtext">without the theatre.</span> */}
           </RevealHeadline>
           <motion.p className="lede" variants={item}>
-            CertSigma audits and certifies fast-growing SaaS and fintech teams
-            against SOC 2, ISO 27001, ISO 42001, GDPR, HIPAA and 20+ other
-            frameworks. India-based lead auditors, fixed scope, no surprise
-            findings on audit day.
+            Get expert guidance across SOC 2, ISO 27001, HIPAA, PCI DSS, NIST and more. We take the complexity out of compliance and help you reach certification faster.
           </motion.p>
           <motion.div className="hero-cta" variants={item}>
             <MagnetButton href="#start" className="b b--blue">
-              Book a free assessment <span className="ar">→</span>
+              GET YOUR FREE ASSESSMENT <span className="ar">→</span>
             </MagnetButton>
             <MagnetButton href="#platform" className="b b--line">
-              See what&apos;s included
+              SEE HOW IT WORKS
             </MagnetButton>
           </motion.div>
           <motion.div className="hero-meta" variants={item}>

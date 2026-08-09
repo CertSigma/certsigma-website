@@ -1,35 +1,26 @@
 "use client";
-import { useState } from "react";
 
-type Logo = { name: string; icon: string | null };
+type Logo = { name: string; src: string };
 
-// Icons come from the free Simple Icons CDN where a match exists.
-// Scrut and Secureframe aren't in that library, so they render as
-// styled wordmarks instead — same pill treatment either way.
 const LOGOS: Logo[] = [
-  { name: "AWS", icon: "https://cdn.simpleicons.org/amazonaws" },
-  { name: "Scrut", icon: null },
-  { name: "Azure", icon: "https://cdn.simpleicons.org/microsoftazure" },
-  { name: "Secureframe", icon: null },
-  { name: "Vercel", icon: "https://cdn.simpleicons.org/vercel" },
-  { name: "Google Cloud", icon: "https://cdn.simpleicons.org/googlecloud" },
+  { name: "AWS", src: "/clients/aws_logo.png" },
+  { name: "Scrut", src: "/clients/scrut_logo.png" },
+  { name: "Azure", src: "/clients/azure_logo.png" },
+  { name: "Secureframe", src: "/clients/secureframe_logo.png" },
+  { name: "Vercel", src: "/clients/vercel_logo.png" },
+  { name: "Google Cloud", src: "/clients/google_logo.png" },
 ];
 
 function LogoPill({ logo }: { logo: Logo }) {
-  const [broken, setBroken] = useState(false);
-  const showIcon = logo.icon && !broken;
   return (
     <span className="logo-pill">
-      {showIcon && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={logo.icon as string}
-          alt=""
-          aria-hidden="true"
-          onError={() => setBroken(true)}
-        />
-      )}
-      {logo.name}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={logo.src}
+        alt={`${logo.name} logo`}
+        width={0}
+        height={0}
+      />
     </span>
   );
 }
@@ -49,7 +40,7 @@ export default function TrustedMarquee() {
   return (
     <div className="trusted">
       <div className="wrap">
-        <p className="cap">Works with the tools you already run on</p>
+        <p className="cap">Trusted by teams at</p>
         <div className="mq">
           <Track items={LOGOS} />
         </div>

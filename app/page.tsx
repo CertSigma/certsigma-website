@@ -1,4 +1,3 @@
-import Announcement from "@/components/Announcement";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import TrustedMarquee from "@/components/TrustedMarquee";
@@ -22,7 +21,6 @@ export default function Home() {
   return (
     <>
       <ClickSpark />
-      <Announcement />
       <Nav />
       <Hero />
       <TrustedMarquee />

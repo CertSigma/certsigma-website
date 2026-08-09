@@ -10,7 +10,8 @@ type Sat = {
   dr: number;
   bs: number;
   dur: string;
-  icon: string;
+  logo: string;
+  alt: string;
   num: string;
   fam: string;
   desc: string;
@@ -19,23 +20,18 @@ type Sat = {
 const RADIUS_VAR = { 1: "var(--r1)", 2: "var(--r2)", 3: "var(--r3)" };
 
 const ORBIT_DATA: Sat[] = [
-  // ring 1 — the four everybody asks for, biggest badges
-  { ring: 1, a: 8, dr: 6, bs: 88, dur: "50s", icon: "i-globe", num: "ISO 27001", fam: "ISO/IEC 27001:2022", desc: "The global benchmark for an information security management system." },
-  { ring: 1, a: 104, dr: -14, bs: 80, dur: "57s", icon: "i-report", num: "SOC 2", fam: "AICPA attestation", desc: "The report US enterprise buyers ask for first — Type I or Type II." },
-  { ring: 1, a: 196, dr: 10, bs: 76, dur: "53s", icon: "i-health", num: "HIPAA", fam: "US HHS", desc: "Safeguards for protected health information and business associates." },
-  { ring: 1, a: 279, dr: -6, bs: 82, dur: "46s", icon: "i-stars", num: "GDPR", fam: "EU 2016/679", desc: "In scope the moment an EU resident is one of your users." },
+  // ring 1 — the two everybody asks for, biggest badges
+  { ring: 1, a: 90, dr: 6, bs: 84, dur: "50s", logo: "/services_logo/iso.png", alt: "ISO 27001 logo", num: "ISO 27001", fam: "ISO/IEC 27001:2022", desc: "The global benchmark for an information security management system." },
+  { ring: 1, a: 210, dr: -6, bs: 84, dur: "57s", logo: "/services_logo/aicpa.png", alt: "AICPA SOC 2 logo", num: "SOC 2", fam: "AICPA attestation", desc: "The report US enterprise buyers ask for first — Type I or Type II." },
+  { ring: 1, a: 330, dr: 10, bs: 84, dur: "53s", logo: "/services_logo/iso.png", alt: "ISO 42001 logo", num: "ISO 42001", fam: "ISO/IEC 42001:2023", desc: "The first certifiable standard for AI management systems." },
   // ring 2 — mid tier, counter-rotating
-  { ring: 2, a: 41, dr: 12, bs: 74, dur: "68s", icon: "i-ai", num: "ISO 42001", fam: "ISO/IEC 42001:2023", desc: "The first certifiable standard for AI management systems." },
-  { ring: 2, a: 118, dr: -18, bs: 66, dur: "76s", icon: "i-card", num: "PCI DSS", fam: "PCI SSC 4.x", desc: "Mandatory wherever cardholder data is processed or stored." },
-  { ring: 2, a: 167, dr: 8, bs: 70, dur: "64s", icon: "i-privacy", num: "ISO 27701", fam: "ISO/IEC 27701", desc: "Privacy management layered on 27001 — the cleanest route to GDPR evidence." },
-  { ring: 2, a: 243, dr: -10, bs: 72, dur: "71s", icon: "i-grid", num: "NIST CSF", fam: "NIST CSF 2.0", desc: "Framework alignment and maturity scoring across the core functions." },
-  { ring: 2, a: 322, dr: 16, bs: 68, dur: "80s", icon: "i-rosette", num: "ISO 9001", fam: "ISO 9001:2015", desc: "The quality standard tenders and procurement teams ask for." },
+  { ring: 2, a: 50, dr: 12, bs: 84, dur: "68s", logo: "/services_logo/hippa_logo.png", alt: "HIPAA logo", num: "HIPAA", fam: "US HHS", desc: "Safeguards for protected health information and business associates." },
+  { ring: 2, a: 170, dr: -14, bs: 84, dur: "76s", logo: "/services_logo/gdpr.png", alt: "GDPR logo", num: "GDPR", fam: "EU 2016/679", desc: "In scope the moment an EU resident is one of your users." },
+  { ring: 2, a: 290, dr: 8, bs: 84, dur: "64s", logo: "/services_logo/iso.png", alt: "ISO 14001 logo", num: "ISO 14001", fam: "ISO 14001:2015", desc: "Environmental management, common in manufacturing supply chains." },
   // ring 3 — outer, smallest, slowest
-  { ring: 3, a: 23, dr: -12, bs: 62, dur: "92s", icon: "i-cloud", num: "ISO 27017", fam: "ISO/IEC 27017", desc: "Cloud-specific controls for shared responsibility and multi-tenancy." },
-  { ring: 3, a: 79, dr: 14, bs: 58, dur: "104s", icon: "i-continuity", num: "ISO 22301", fam: "ISO 22301", desc: "Business continuity management, increasingly requested alongside 27001." },
-  { ring: 3, a: 151, dr: -8, bs: 64, dur: "88s", icon: "i-shieldlock", num: "CMMC", fam: "DoD CMMC 2.0", desc: "Readiness gap work against NIST SP 800-171 ahead of a C3PAO audit." },
-  { ring: 3, a: 214, dr: 18, bs: 56, dur: "98s", icon: "i-leaf", num: "ISO 14001", fam: "ISO 14001:2015", desc: "Environmental management, common in manufacturing supply chains." },
-  { ring: 3, a: 296, dr: -4, bs: 60, dur: "110s", icon: "i-safety", num: "ISO 45001", fam: "ISO 45001:2018", desc: "Occupational health and safety management systems." },
+  { ring: 3, a: 10, dr: 10, bs: 84, dur: "92s", logo: "/services_logo/pci.png", alt: "PCI DSS logo", num: "PCI DSS", fam: "PCI SSC 4.x", desc: "Mandatory wherever cardholder data is processed or stored." },
+  { ring: 3, a: 130, dr: -8, bs: 84, dur: "104s", logo: "/services_logo/nist.png", alt: "NIST CSF logo", num: "NIST CSF", fam: "NIST CSF 2.0", desc: "Framework alignment and maturity scoring across the core functions." },
+  { ring: 3, a: 250, dr: 14, bs: 84, dur: "88s", logo: "/services_logo/iso.png", alt: "ISO 45001 logo", num: "ISO 45001", fam: "ISO 45001:2018", desc: "Occupational health and safety management systems." },
 ];
 
 const RING_DIR: Record<1 | 2 | 3, string | undefined> = {
@@ -114,9 +110,8 @@ export default function Orbit() {
                           ease: [0.2, 0.8, 0.2, 1],
                         }}
                       >
-                        <svg aria-hidden="true">
-                          <use href={`#${d.icon}`}></use>
-                        </svg>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={d.logo} alt={d.alt} />
                         <span className="bnum">{d.num}</span>
                       </motion.a>
                     </div>

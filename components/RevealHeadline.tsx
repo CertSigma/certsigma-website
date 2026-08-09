@@ -40,7 +40,18 @@ export default function RevealHeadline({
         });
         node.parentNode?.replaceChild(frag, node);
       } else if (node.nodeType === 1) {
-        Array.from(node.childNodes).forEach(wrap);
+        // Wrap the whole element as a single reveal unit instead of
+        // reaching inside it. Elements like the gradient ".gtext" span
+        // rely on background-clip:text painting directly on their own
+        // text node — splitting that text into new inline-block spans
+        // breaks the clip and the words render invisible. Wrapping the
+        // element from the outside keeps its internal styling intact.
+        const el = node as HTMLElement;
+        const outer = document.createElement("span");
+        outer.className = "rvl";
+        outer.style.setProperty("--d", i++ * 0.075 + "s");
+        el.parentNode?.replaceChild(outer, el);
+        outer.appendChild(el);
       }
     }
     Array.from(host.childNodes).forEach(wrap);

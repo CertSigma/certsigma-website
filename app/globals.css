@@ -73,10 +73,6 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy-ink);letter-spacing:-0.0
 .b:hover .ar{transform:translateX(3px)}
 
 /* ---------- announcement + nav ---------- */
-.ann{background:var(--navy-ink);color:#fff;text-align:center;padding:9px 18px;font-size:13.5px}
-.ann a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
-.ann .flag{margin-left:8px}
-
 .navshell{position:sticky;top:0;z-index:80;padding:14px 0;transition:padding .3s ease}
 .navshell.stuck{padding:8px 0}
 .navbar{
@@ -232,7 +228,7 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy-ink);letter-spacing:-0.0
   display:inline-flex;align-items:center;gap:10px;
 }
 .logo-pill img{
-  width:18px;height:18px;object-fit:contain;
+  height:24px;width:auto;max-width:120px;object-fit:contain;
   filter:grayscale(1) opacity(.65);transition:filter .25s ease;
 }
 .logo-pill:hover img{filter:none}
@@ -399,17 +395,16 @@ section{padding:96px 0}
   box-shadow:0 12px 24px -16px rgba(18,41,63,.6);
   transition:transform .24s cubic-bezier(.2,.8,.2,1),box-shadow .24s ease,border-color .24s ease,background .24s ease;
 }
-.badge svg{width:calc(var(--bs) * .3);height:calc(var(--bs) * .3);stroke:var(--navy);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:stroke .24s ease}
+.badge img{width:calc(var(--bs) * .5);height:calc(var(--bs) * .5);object-fit:contain}
 .badge .bnum{
   font-family:var(--display);font-weight:700;color:var(--navy-ink);line-height:1.05;
-  font-size:calc(var(--bs) * .152);letter-spacing:-.01em;transition:color .24s ease;
+  font-size:calc(var(--bs) * .135);letter-spacing:-.01em;text-align:center;padding:0 4px;
 }
 .badge:hover,.badge:focus-visible{
-  transform:scale(1.14);background:var(--navy-ink);border-color:var(--navy-ink);
+  transform:scale(1.14);background:var(--paper);border-color:var(--navy-ink);
   box-shadow:0 18px 30px -14px rgba(18,41,63,.75);
 }
-.badge:hover .bnum,.badge:focus-visible .bnum{color:#fff}
-.badge:hover svg,.badge:focus-visible svg{stroke:#F2D99B}
+.badge:hover .bnum,.badge:focus-visible .bnum{color:var(--navy-ink)}
 
 .orbit-core{position:relative;z-index:2;text-align:center;max-width:min(230px,42vw);pointer-events:none}
 .orbit-core .big{font-family:var(--display);font-weight:800;font-size:clamp(46px,6.6vw,80px);color:var(--navy-ink);line-height:1}
