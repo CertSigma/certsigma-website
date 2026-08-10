@@ -43,6 +43,7 @@ export default function Testimonials() {
   }
 
   function onPointerDown(e: React.PointerEvent) {
+    if (e.pointerType === "touch") return;
     dragging.current = true;
     startX.current = e.clientX;
     startLeft.current = railRef.current?.scrollLeft || 0;
