@@ -235,11 +235,18 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy-ink);letter-spacing:-0.0
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* ---------- services ---------- */
-.svc-list{display:flex;flex-direction:column;gap:18px}
+.svc-list{display:flex;flex-direction:column;gap:22px}
+#services .head{
+  position:sticky;top:84px;z-index:60;
+  background:var(--parchment);
+  padding:16px 0 14px;margin-bottom:8px;
+}
 .svc-panel{
+  position:sticky;top:320px;
   border-radius:var(--r-xl);padding:44px;display:grid;
   grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;overflow:hidden;
 }
+.svc-list .svc-panel:first-child{box-shadow:0 30px 60px -30px rgba(18,41,63,.35)}
 .svc-tint-blue{background:var(--tint-blue)}
 .svc-tint-gold{background:var(--tint-gold)}
 .svc-tint-sage{background:var(--tint-sage)}

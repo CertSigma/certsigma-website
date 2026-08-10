@@ -1,5 +1,5 @@
 import Rise from "./Rise";
-import ServiceIllustrationPlayer from "./ServiceIllustrationPlayer";
+import LazyServiceIllustration from "./LazyServiceIllustration";
 import type { ServiceIllustrationProps } from "./remotion/ServiceIllustration";
 
 type Service = {
@@ -90,7 +90,7 @@ export default function Services() {
       <div className="wrap">
         <Rise className="head">
           <span className="kicker">Our Services</span>
-          <h2>Your compliance team. On demand.</h2>
+          <h2>Your <span style={{ color: "var(--sigma)" }}>compliance team</span>. On demand.</h2>
           <p className="lede">
             From SOC 2 to ISO 27001 to ongoing audits — we run the whole
             program. You stay focused on shipping product and closing deals.
@@ -99,7 +99,7 @@ export default function Services() {
 
         <div className="svc-list">
           {SERVICES.map((s) => (
-            <Rise key={s.title} className={`svc-panel svc-tint-${s.tint}`}>
+            <div key={s.title} className={`svc-panel svc-tint-${s.tint}`}>
               <div className="svc-text">
                 <h3>{s.title}</h3>
                 <p className="tagline">{s.tagline}</p>
@@ -113,9 +113,9 @@ export default function Services() {
                 </a>
               </div>
               <div className="svc-illustration">
-                <ServiceIllustrationPlayer {...s.illustration} />
+                <LazyServiceIllustration {...s.illustration} />
               </div>
-            </Rise>
+            </div>
           ))}
         </div>
       </div>

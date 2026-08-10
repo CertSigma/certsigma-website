@@ -1,14 +1,17 @@
 "use client";
 
-type Logo = { name: string; src: string };
+type Logo = { name: string; src: string; width: number; height: number };
 
+// width/height are each logo's real pixel aspect ratio (scaled from its
+// source file) so the browser reserves the correct box before the image
+// loads instead of popping the pill open at render time.
 const LOGOS: Logo[] = [
-  { name: "AWS", src: "/clients/aws_logo.png" },
-  { name: "Scrut", src: "/clients/scrut_logo.png" },
-  { name: "Azure", src: "/clients/azure_logo.png" },
-  { name: "Secureframe", src: "/clients/secureframe_logo.png" },
-  { name: "Vercel", src: "/clients/vercel_logo.png" },
-  { name: "Google Cloud", src: "/clients/google_logo.png" },
+  { name: "AWS", src: "/clients/aws_logo.webp", width: 40, height: 24 },
+  { name: "Scrut", src: "/clients/scrut_logo.webp", width: 89, height: 24 },
+  { name: "Azure", src: "/clients/azure_logo.webp", width: 141, height: 24 },
+  { name: "Secureframe", src: "/clients/secureframe_logo.webp", width: 114, height: 24 },
+  { name: "Vercel", src: "/clients/vercel_logo.webp", width: 105, height: 24 },
+  { name: "Google Cloud", src: "/clients/google_logo.webp", width: 133, height: 24 },
 ];
 
 function LogoPill({ logo }: { logo: Logo }) {
@@ -18,8 +21,9 @@ function LogoPill({ logo }: { logo: Logo }) {
       <img
         src={logo.src}
         alt={`${logo.name} logo`}
-        width={0}
-        height={0}
+        width={logo.width}
+        height={logo.height}
+        decoding="async"
       />
     </span>
   );

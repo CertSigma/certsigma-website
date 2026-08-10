@@ -6,7 +6,7 @@ export type ServiceIllustrationProps = {
   coreIcon: string; // IconSprite symbol id shown in the central badge
 };
 
-const ACCENT: Record<ServiceIllustrationProps["accent"], { core: string; ring: string }> = {
+export const ACCENT: Record<ServiceIllustrationProps["accent"], { core: string; ring: string }> = {
   blue: { core: "#0A6EFF", ring: "rgba(10,110,255,.16)" },
   gold: { core: "#C5973A", ring: "rgba(197,151,58,.18)" },
   sage: { core: "#2E9E6B", ring: "rgba(46,158,107,.16)" },
@@ -15,7 +15,7 @@ const ACCENT: Record<ServiceIllustrationProps["accent"], { core: string; ring: s
 // Fixed placement per badge slot (angle in degrees, radius in px). Kept
 // static rather than orbiting so this reads as a calm illustration next
 // to a paragraph of text, distinct from the spinning hero orbit.
-const SLOTS = [
+export const SLOTS = [
   { angle: -132, radius: 128 },
   { angle: -18, radius: 138 },
   { angle: 108, radius: 122 },
