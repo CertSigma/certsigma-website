@@ -88,7 +88,7 @@ export default function Services() {
   return (
     <section id="services" style={{ paddingTop: 0 }}>
       <div className="wrap">
-        <Rise className="head">
+        <Rise className="head" style={{ zIndex: -5 }}>
           <span className="kicker">Our Services</span>
           <h2>Your <span style={{ color: "var(--sigma)" }}>compliance team</span>. On demand.</h2>
           <p className="lede">
