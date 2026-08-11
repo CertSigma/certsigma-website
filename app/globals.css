@@ -279,6 +279,33 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy-ink);letter-spacing:-0.0
 .svc-illustration{width:100%;aspect-ratio:7/6;min-height:220px}
 @media (max-width:860px){.svc-illustration{max-width:340px;margin:0 auto}}
 
+/* ---------- team ---------- */
+.team-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+.team-copy h2{font-size:clamp(30px,4vw,44px);font-weight:800;margin-bottom:16px}
+.team-showcase{position:relative;display:flex;align-items:center;justify-content:center;min-height:420px}
+.team-ring{position:absolute;border-radius:50%;border:1px dashed var(--hair-strong);pointer-events:none}
+.team-ring--outer{width:92%;aspect-ratio:1;left:4%}
+.team-ring--inner{width:60%;aspect-ratio:1;left:20%}
+.team-people{position:relative;width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:28px 8px;z-index:1}
+.tm{display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px}
+.tm-avatar{
+  width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 14px 26px -16px rgba(18,41,63,.5);margin-bottom:8px;
+}
+.tm-avatar--blue{background:linear-gradient(135deg,var(--sigma),#12293F)}
+.tm-avatar--gold{background:linear-gradient(135deg,var(--gold),#12293F)}
+.tm-avatar--sage{background:linear-gradient(135deg,#2E9E6B,#12293F)}
+.tm-name{font-family:var(--display);font-weight:700;font-size:14.5px;color:var(--navy-ink)}
+.tm-role{font-family:var(--mono);font-size:11px;color:var(--sigma)}
+@media (max-width:860px){
+  .team-grid{grid-template-columns:1fr;gap:36px}
+  .team-showcase{min-height:340px}
+}
+@media (max-width:520px){
+  .team-people{gap:24px 4px}
+  .tm-avatar{width:60px;height:60px}
+}
+
 /* ---------- generic section ---------- */
 section{padding:96px 0}
 @media (max-width:640px){section{padding:68px 0}}
@@ -363,6 +390,11 @@ section{padding:96px 0}
 }
 .fw:hover{transform:translateY(-3px);background:var(--tint-blue)}
 .fw .code{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.06em;margin-bottom:auto}
+.fw-head{display:flex;align-items:center;gap:14px;margin-bottom:auto;min-width:0}
+.fw-head .code{margin-bottom:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+.fw-head h4{margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fw-head-txt{flex:1;min-width:0}
+.fw-logo{height:34px;width:auto;object-fit:contain;flex-shrink:0}
 .fw h4{font-size:17px;font-weight:700;margin:20px 0 6px}
 .fw p{font-size:13px;color:var(--muted)}
 .fwmore{grid-column:1/-1;text-align:center;padding:22px;font-size:14px;color:var(--muted);border:1px dashed var(--hair-strong);border-radius:var(--r-md)}

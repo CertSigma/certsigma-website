@@ -7,6 +7,7 @@ import Stats from "@/components/Stats";
 import Process from "@/components/Process";
 import PinnedScroll from "@/components/PinnedScroll";
 import Frameworks from "@/components/Frameworks";
+import Team from "@/components/Team";
 // Ecosystem is intentionally hidden below (not deleted) — see note before <Footer />.
 // import Ecosystem from "@/components/Ecosystem";
 import Testimonials from "@/components/Testimonials";
@@ -30,6 +31,7 @@ export default function Home() {
       <Process />
       <PinnedScroll />
       <Frameworks />
+      <Team />
       {/* Ecosystem section hidden per request — component kept intact in components/Ecosystem.tsx.
           To restore: uncomment the import above and <Ecosystem /> here. */}
       <Testimonials />

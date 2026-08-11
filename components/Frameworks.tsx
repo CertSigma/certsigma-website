@@ -30,8 +30,18 @@ export default function Frameworks() {
         <Rise className="fwgrid">
           {FRAMEWORKS.map((f) => (
             <div className="fw" key={f.title}>
-              <span className="code">{f.code}</span>
-              <h4>{f.title}</h4>
+              <div className="fw-head">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="fw-logo"
+                  src="/coverage/coverage.png"
+                  alt={`${f.title} coverage`}
+                />
+                <div className="fw-head-txt">
+                  <span className="code">{f.code}</span>
+                  <h4>{f.title}</h4>
+                </div>
+              </div>
               <p>{f.body}</p>
             </div>
           ))}

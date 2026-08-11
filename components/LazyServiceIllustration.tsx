@@ -17,11 +17,12 @@ export default function LazyServiceIllustration(props: ServiceIllustrationProps)
 
   return (
     <div ref={ref} style={{ position: "relative", width: "100%", height: "100%" }}>
-      <IllustrationPlaceholder {...props} />
-      {inView && (
+      {inView ? (
         <div style={{ position: "absolute", inset: 0 }}>
           <ServiceIllustrationPlayer {...props} />
         </div>
+      ) : (
+        <IllustrationPlaceholder {...props} />
       )}
     </div>
   );
