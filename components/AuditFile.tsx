@@ -74,10 +74,12 @@ export default function AuditFile() {
         </div>
         <div className={"panel" + (idx === 2 ? " on" : "")} id="p-cert">
           <div className="cert">
-            <div className="seal">Σ</div>
+            <div className="seal">
+              <img src="/certsigma_logo.svg" alt="CertSigma" className="seal" />
+            </div>
             <h4>ISO/IEC 27001:2022</h4>
             <p>Certificate of registration — information security management system</p>
-            <div className="sig"><span>Issued by CertSigma</span><span>Valid 3 years · surveillance annual</span></div>
+            <div className="sig"><span>Issued by Independant Auditors</span><span>Valid 3 years · surveillance annual</span></div>
           </div>
         </div>
       </div>

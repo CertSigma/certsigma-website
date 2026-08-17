@@ -5,7 +5,6 @@ const LINKS = [
   { href: "#platform", label: "What we do" },
   { href: "#frameworks", label: "Frameworks" },
   { href: "#process", label: "Process" },
-  { href: "#plans", label: "Plans" },
   { href: "#faq", label: "FAQ" },
 ];
 

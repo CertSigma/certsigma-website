@@ -31,7 +31,7 @@ export default function Home() {
       <Process />
       <PinnedScroll />
       <Frameworks />
-      <Team />
+      {/* <Team /> */}
       {/* Ecosystem section hidden per request — component kept intact in components/Ecosystem.tsx.
           To restore: uncomment the import above and <Ecosystem /> here. */}
       <Testimonials />

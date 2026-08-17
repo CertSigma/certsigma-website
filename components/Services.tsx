@@ -25,7 +25,7 @@ const SERVICES: Service[] = [
   },
   {
     title: "Platform Services",
-    tagline: "We work with over 10 platforms to automate your compliance.",
+    tagline: "We work with 5 platforms of your choice to automate your compliance.",
     bullets: [
       "6-week structured accelerator from scope to certification",
       "Elite partner expertise that closes the automation gap",

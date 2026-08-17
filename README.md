@@ -27,7 +27,7 @@ The service illustrations use [Remotion](https://remotion.dev), which is **free 
 `components/CalBooking.tsx` embeds a live Cal.com scheduler in the "Thirty minutes. A real scope." section, using `@calcom/embed-react` (same inline-embed + "open in a new tab" fallback pattern as beyondbrnd.co). It's wired to:
 
 ```ts
-const CAL_LINK = "nandagopal.chandragam/30min";
+const CAL_LINK = "shak-certsigma/30min?month=2026-08";
 ```
 
 To point it at a different Cal.com username/event-type slug later, just change that one constant.

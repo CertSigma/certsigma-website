@@ -18,17 +18,16 @@ export default function Stats() {
             </div>
             <div>
               <h2>
-                <CountUp target={6} /> weeks<span className="flag">confirm</span>
+                <CountUp target={6} /> weeks
               </h2>
               <p>Typical time from scoping call to a SOC 2 Type I or ISO stage-one audit.</p>
             </div>
             <div>
               <h2>
-                <CountUp target={200} />+<span className="flag">confirm</span>
+                <CountUp target={300} />+
               </h2>
               <p>
-                Companies guided through certification across the wider
-                CertSigma and Relynt ecosystem.
+                Companies guided through Audit readiness and certification
               </p>
             </div>
           </div>

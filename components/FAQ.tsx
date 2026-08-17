@@ -4,12 +4,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import Rise from "./Rise";
 
 const ITEMS = [
-  { q: "What does CertSigma certify, and what does Relynt do?", a: "CertSigma runs the audit and issues the certificate or attestation report. Relynt, the sister practice, does hands-on implementation — building controls, running vCISO programmes — before an audit begins. Separating them is what protects the independence of the audit." },
+  { q: "What is CertSigma's core expertise?", a: "CertSigma specialises in compliance automation, cybersecurity audits, and certification support for frameworks such as SOC 2, ISO 27001, HIPAA, GDPR, and PCI DSS. We combine automation tools with human expertise to simplify complex compliance processes." },
   { q: "How long does a SOC 2 or ISO 27001 audit take?", a: "A SOC 2 Type I or an ISO 27001 stage-one audit moves quickly once evidence is ready. A SOC 2 Type II needs an observation period of its own — usually three to twelve months — because it tests whether controls operated, not just whether they exist. You'll get a real timeline at scoping." },
   { q: "Can you handle several frameworks at once?", a: "Yes, and it's usually cheaper than running them separately. A control evidenced for ISO 27001 satisfies most of what SOC 2 asks for, so we build one evidence set and map it across every framework in scope." },
-  { q: "Do you work with companies outside India?", a: "Yes. CertSigma is India-based, but the certifications are the ones enterprise buyers expect everywhere. Most clients are selling into the US, EU or Gulf markets from an India-based or India-founded team." },
-  { q: "What happens after we're certified?", a: "ISO certificates run a three-year cycle with annual surveillance audits. SOC 2 Type II reports need renewal each observation period. The surveillance calendar is built into the engagement from day one so nothing lapses by accident." },
-  { q: "We already have controls in place. Can you just audit?", a: "Absolutely. If you're already prepared, come straight to CertSigma for the audit — Relynt is there for teams who need the build-out, not a requirement." },
+  { q: "Do you work predominantly with clients from a specific Region?", a: "No. We have a global presense in Dubai and India to cover both the US, EU and APAC Regions." },
+  { q: "What happens after we're certified?", a: "We will help you remain compliant throughout the year with our optional vCISO services and will also help you with each year's surveillance re-audits." },
+  { q: "We already have controls in place. Can you just audit?", a: "Yes. We have a pool of peer reviewed CPA's who we've handpicked for independent audits." },
 ];
 
 function FaqItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "CertSigma — Security certification, done properly.",
   description:
     "CertSigma is the audit and certification arm of an India-native compliance ecosystem. SOC 2, ISO 27001, ISO 42001, GDPR, HIPAA and 20+ frameworks, run by lead auditors.",
+  icons: {
+    icon: "/certsigma_logo.svg",
+  },
 };
 
 export const viewport: Viewport = {
