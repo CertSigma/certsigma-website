@@ -3,7 +3,7 @@ import AuditFile from "./AuditFile";
 
 const STEPS = [
   { n: "Phase 01", title: "Scope and find the gaps", body: "We map your customer commitments to the right frameworks, then benchmark every control against them and hand back a prioritised list with owners.", who: "Week 1", cls: "" },
-  { n: "Phase 02", title: "Close what's open", body: "Policies, tooling, access, evidence. Where controls need building rather than checking, the work routes to Relynt — kept clear of the audit team.", who: "Week 2-5", cls: "rel" },
+  { n: "Phase 02", title: "Close what's open", body: "Policies, tooling, access, evidence. Where controls need building rather than checking, we hand your team a prioritised checklist and stay on the audit side of the line — we advise, we don't build the controls ourselves.", who: "Week 2-5", cls: "rel" },
   { n: "Phase 03", title: "Audit, certify, maintain", body: "Internal audit, then the formal certification audit, then a surveillance calendar so the certificate stays valid instead of expiring quietly.", who: "Week 6-8", cls: "" },
 ];
 

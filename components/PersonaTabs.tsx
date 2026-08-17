@@ -12,7 +12,7 @@ const GROUPS: { id: string; label: string; cards: Card[] }[] = [
     cards: [
       { glyph: "🎯", tone: "g-blue", title: "Only the frameworks you need", body: "We scope against your actual deal pipeline. If nobody is asking you for PCI DSS, we won't sell you PCI DSS." },
       { glyph: "📄", tone: "g-gold", title: "A quote you can budget against", body: "Fixed scope, published process, no mid-engagement discovery that quietly doubles the invoice." },
-      { glyph: "🧭", tone: "g-sage", title: "One team, two hats kept apart", body: "Relynt builds the controls. CertSigma audits them. Independent by design, not by disclaimer." },
+      { glyph: "🧭", tone: "g-sage", title: "We audit. We don't implement.", body: "CertSigma never sells the remediation work it would later have to certify. Independent by design, not by disclaimer." },
     ],
   },
   {

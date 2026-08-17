@@ -34,7 +34,7 @@ export default function Frameworks() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="fw-logo"
-                  src="/coverage/coverage.png"
+                  src="/coverage/Shield_Check.svg"
                   alt={`${f.title} coverage`}
                 />
                 <div className="fw-head-txt">

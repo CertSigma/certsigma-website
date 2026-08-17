@@ -5,9 +5,9 @@ const ITEMS = [
   {
     idx: "01",
     title: "The auditor never graded their own homework",
-    body: "Relynt implements. CertSigma audits. When a prospect asks who built the controls, the answer isn't \"the same people who signed off on them\".",
+    body: "CertSigma only audits — we don't build or sell the controls we're assessing. When a prospect asks who built the controls, the answer isn't \"the same people who signed off on them\".",
     pinTitle: "Independence you can point to",
-    pinBlurb: "Most compliance firms sell you the build and the audit in one contract. We separate them on purpose, because a certificate is only worth what the independence behind it is worth.",
+    pinBlurb: "Most compliance firms sell you the build and the audit in one contract. We stay on one side of that line on purpose, because a certificate is only worth what the independence behind it is worth.",
   },
   {
     idx: "02",
