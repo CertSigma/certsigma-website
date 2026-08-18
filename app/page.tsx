@@ -34,7 +34,7 @@ export default function Home() {
       {/* <Team /> */}
       {/* Ecosystem section hidden per request — component kept intact in components/Ecosystem.tsx.
           To restore: uncomment the import above and <Ecosystem /> here. */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* Plans ("Engagements") section hidden per request — component kept intact in components/Plans.tsx.
           To restore: uncomment the import above and <Plans /> here. */}
       <FAQ />
