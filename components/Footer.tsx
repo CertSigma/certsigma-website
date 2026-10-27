@@ -33,7 +33,7 @@ export default function Footer() {
               <li>
                 <a href="#">
                   <svg className="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                  <span>16th Main Road, 12th A Cross Rd, Mahadeshwara Nagar, BTM Layout 2nd Stage, BTM Layout, Bengaluru, Karnataka 560076</span>
+                  <span>Dubai address ( Ajman FZE, Ajman, United Arab Emirates License No. 2621016687888)</span>
                 </a>
               </li>
               <li>
@@ -53,6 +53,10 @@ export default function Footer() {
         </div>
         <div className="fbot">
           <span>© 2026 CertSigma</span>
+          <div className="fbot-compliance">
+            <img src="/services_logo/aicpa.png" alt="AICPA SOC" />
+            <span>CertSigma is SOC certified</span>
+          </div>
         </div>
       </div>
     </footer>

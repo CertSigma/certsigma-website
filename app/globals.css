@@ -640,6 +640,22 @@ h4 {
   gap: 8px
 }
 
+.hero-compliance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--navy);
+}
+
+.hero-compliance img {
+  width: 52px;
+  height: auto;
+  object-fit: contain;
+}
+
 .chip {
   font-family: var(--mono);
   font-size: 11.5px;
@@ -2479,4 +2495,17 @@ footer {
   border-top: 1px solid var(--hair);
   font-size: 13px;
   color: var(--muted)
+}
+
+.fbot-compliance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.fbot-compliance img {
+  width: 44px;
+  height: auto;
+  object-fit: contain;
 }
