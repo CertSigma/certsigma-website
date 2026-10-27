@@ -2422,7 +2422,7 @@ section {
 /* ---------- footer ---------- */
 footer {
   border-top: 1px solid var(--hair);
-  padding: 60px 0 34px;
+  padding: 60px 0 16px;
   margin-top: 40px
 }
 
@@ -2492,6 +2492,7 @@ footer {
   gap: 14px;
   flex-wrap: wrap;
   padding-top: 24px;
+  padding-bottom: 0;
   border-top: 1px solid var(--hair);
   font-size: 13px;
   color: var(--muted)
@@ -2500,12 +2501,47 @@ footer {
 .fbot-compliance {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
   margin-left: auto;
+}
+
+.fbot-compliance-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
 .fbot-compliance img {
   width: 44px;
   height: auto;
   object-fit: contain;
+}
+
+.fbot-pill {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 9px;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.fbot-pill--green {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.45);
+}
+
+.fbot-pill--blue {
+  color: #60a5fa;
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.45);
 }

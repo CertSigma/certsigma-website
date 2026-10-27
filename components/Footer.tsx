@@ -13,10 +13,10 @@ export default function Footer() {
             <h5>Frameworks</h5>
             <ul>
               <li><a href="#frameworks">SOC 2</a></li>
-              <li><a href="#frameworks">ISO 27001</a></li>
+              <li><a href="#frameworks">ISO 27001 (Ongoing)</a></li>
               <li><a href="#frameworks">ISO 42001</a></li>
               <li><a href="#frameworks">HIPAA</a></li>
-              <li><a href="#frameworks">GDPR</a></li>
+              <li><a href="#frameworks">GDPR (Ongoing)</a></li>
             </ul>
           </div>
           <div>
@@ -54,8 +54,20 @@ export default function Footer() {
         <div className="fbot">
           <span>© 2026 CertSigma</span>
           <div className="fbot-compliance">
-            <img src="/services_logo/aicpa.png" alt="AICPA SOC" />
-            <span>CertSigma is SOC certified</span>
+            <div className="fbot-compliance-item">
+              <div style={{height: '44px', display: 'flex', alignItems: 'center'}}>
+                <img src="/services_logo/aicpa.png" alt="AICPA SOC" />
+              </div>
+              <span style={{color: '#22c55e', fontSize: '9px', fontWeight: 600, textTransform: 'uppercase', lineHeight: 1, marginTop: '2px'}}>Compliant</span>
+            </div>
+            <div style={{width: '1px', height: '60px', background: '#ffffff', opacity: 0.3, margin: '0 8px'}}></div>
+            <div className="fbot-compliance-item" style={{paddingBottom: '16px'}}>
+              <div style={{height: '44px', display: 'flex', alignItems: 'center', gap: '8px'}}>
+                <img src="/services_logo/iso.png" alt="ISO" />
+                <img src="/services_logo/gdpr.png" alt="GDPR" />
+              </div>
+              <span style={{position: 'absolute', bottom: '0px', left: '50%', transform: 'translateX(-50%)', color: '#60a5fa', fontSize: '9px', fontWeight: 600, textTransform: 'uppercase', lineHeight: 1}}>Ongoing</span>
+            </div>
           </div>
         </div>
       </div>

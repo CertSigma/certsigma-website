@@ -56,8 +56,6 @@ export default function Hero() {
             <span className="chip">Fixed scope, published process</span>
           </motion.div>
           <motion.div className="hero-compliance" variants={item}>
-            <img src="/services_logo/aicpa.png" alt="AICPA SOC" />
-            <span>CertSigma is SOC certified</span>
           </motion.div>
         </motion.div>
 
