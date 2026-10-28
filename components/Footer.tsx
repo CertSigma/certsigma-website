@@ -13,10 +13,11 @@ export default function Footer() {
             <h5>Frameworks</h5>
             <ul>
               <li><a href="#frameworks">SOC 2</a></li>
-              <li><a href="#frameworks">ISO 27001 (Ongoing)</a></li>
+              <li><a href="#frameworks">ISO 27001</a></li>
               <li><a href="#frameworks">ISO 42001</a></li>
               <li><a href="#frameworks">HIPAA</a></li>
-              <li><a href="#frameworks">GDPR (Ongoing)</a></li>
+              <li><a href="#frameworks">GDPR</a></li>
+              <li><a href="#frameworks">120 + Frameworks</a></li>
             </ul>
           </div>
           <div>
